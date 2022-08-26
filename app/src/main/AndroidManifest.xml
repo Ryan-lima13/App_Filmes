@@ -16,6 +16,9 @@
         android:theme="@style/Theme.AppFilmes"
         tools:targetApi="31">
         <activity
+            android:name=".Video"
+            android:exported="false" />
+        <activity
             android:name=".Detahes_filme"
             android:exported="false" />
         <activity

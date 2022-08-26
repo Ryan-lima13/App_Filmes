@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.core.widget.NestedScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
-   android:layout_width="match_parent"
-    android:layout_height="match_parent">
-<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
     tools:context=".Detahes_filme">
+
 
     <ImageView
         android:id="@+id/dt_capaFilme"
@@ -21,8 +22,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_detalhes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:navigationIcon="@drawable/ic_voltar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
-        android:id="@+id/dt_nomeFilme"
+        android:id="@+id/dt_tituloFilme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="titulo filem"
@@ -51,7 +61,7 @@
         app:layout_constraintEnd_toEndOf="parent"
 
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/dt_nomeFilme" />
+        app:layout_constraintTop_toBottomOf="@id/dt_tituloFilme" />
     <TextView
         android:id="@+id/dt_elencoFilme"
         android:layout_width="match_parent"
@@ -70,6 +80,7 @@
         app:layout_constraintTop_toBottomOf="@id/dt_descricaoFilme" />
 
     <ImageView
+        android:id="@+id/play_video"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:src="@drawable/ic_play_video"
